@@ -3,34 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Customer Access</title>
+  <title>Sanctovia - Sign Up</title>
   <link rel="stylesheet" href="signin.css">
 </head>
 <body>
 
-  <div class="header">
-    <h2>Customer Sign Up</h2>
-    <img src="logo.png" alt="Company Logo" class="logo">
-  </div>
-  <div class="form-container">
-    <form action="/signup" method="POST">
-      <div class="form-group">
-        <label for="signup-name">Full Name:</label>
-        <input type="text" id="signup-name" name="name" required>
+  <div class="page-wrapper">
+    <div class="image-container">
+      <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=80" alt="Sanctovia Hotel Room">
+    </div>
+
+    <div class="form-wrapper">
+      <div class="brand-header">
+        <h1>Sanctovia</h1>
+        <p>Unwind in a world curated just for you.</p>
       </div>
 
-      <div class="form-group">
-        <label for="signup-email">Email:</label>
-        <input type="email" id="signup-email" name="email" required>
+      <h2>Sign Up</h2>
+
+      <form action="/signup" method="POST">
+        <div class="form-group">
+          <input type="text" id="signup-name" name="name" placeholder="FULL NAME" required>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="signup-email" name="email" placeholder="ENTER EMAIL" required>
+        </div>
+
+        <div class="form-group">
+          <input type="password" id="signup-password" name="password" placeholder="ENTER PASSWORD" required>
+        </div>
+
+        <button type="submit" class="btn-submit">Create Account</button>
+      </form>
+
+      <div class="divider">
+        <span>Or</span>
       </div>
 
-      <div class="form-group">
-        <label for="signup-password">Password:</label>
-        <input type="password" id="signup-password" name="password" required>
+      <div class="switch-auth">
+        <a href="login.html" class="btn-switch">Already have an Account? <span>Log in</span></a>
       </div>
-
-      <button type="submit">Sign Up</button>
-    </form>
+    </div>
   </div>
 
 </body>
